@@ -1,5 +1,6 @@
-#
+# Docker
 
+### Список используемых команд
 - sudo docker run hello-world
 - sudo docker run -it ubuntu bash
 - sudo docker run -h $HOST -it ubuntu bash
@@ -16,3 +17,11 @@
 - sudo docker rm $NAME
 - sudo docker rm -v $(sudo docker ps -aq)
 - sudo docker images
+
+### Создание образа с контейнера и его публикация
+- sudo docker run -it --name myapp --hostname myapp ubuntu bash
+- sudo docker commit myapp iiifx/stepic-docker-for-beginners-myapp
+- sudo docker run iiifx/stepic-docker-for-beginners-myapp cowsay "hello"
+- sudo docker login docker.io
+- sudo docker push iiifx/stepic-docker-for-beginners-myapp
+- sudo docker run iiifx/stepic-docker-for-beginners-myapp cowsay "hello"
