@@ -29,3 +29,7 @@
 
 ### Создание образа через Dockerfile
 - docker build -t iiifx/stepic-docker-for-beginners-myapp2 .
+
+### Связывание контейнеров
+- docker run --name mysql8 -e MYSQL_ROOT_PASSWORD=root -d mysql
+- docker run --name phpmyadmin -d --link mysql8:db -p 8080:80 phpmyadmin
