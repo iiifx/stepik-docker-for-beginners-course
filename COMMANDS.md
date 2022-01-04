@@ -19,6 +19,12 @@
 - docker images
 - docker rmi $ID
 
+- docker-compose up ?-d
+- docker-compose down
+- docker-compose build
+- docker-compose ps
+- docker-compose rm
+
 ### Создание образа с контейнера и его публикация
 - docker run -it --name myapp --hostname myapp ubuntu bash
 - docker commit myapp iiifx/stepic-docker-for-beginners-myapp
