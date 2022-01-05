@@ -1,4 +1,6 @@
-# Docker
+## Docker для начинающих
+
+[Ссылка на курс](https://stepik.org/course/74010/syllabus)
 
 ### Список используемых команд
 - docker run hello-world
@@ -18,6 +20,8 @@
 - docker rm -v $(sudo docker ps -aq)
 - docker images
 - docker rmi $ID
+- docker rmi $(docker images -q) --force
+- docker history $ID
 
 - docker-compose up ?-d
 - docker-compose down
